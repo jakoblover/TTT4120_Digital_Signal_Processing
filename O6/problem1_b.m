@@ -30,12 +30,25 @@ f4 = k_4./(N_4-1);
 
 
 %%%%%%% Plot %%%%%%%
+
+subplot(2,2,1);
 hold on;
 plot(f, abs(x_f));
+stem(f1,abs(x_f1));
 
-stem(f1,abs(x_f1))
-stem(f2,abs(x_f2))
-stem(f3,abs(x_f3))
+subplot(2,2,2);
+hold on;
+plot(f, abs(x_f));
+stem(f2,abs(x_f2));
+
+subplot(2,2,3);
+hold on;
+plot(f, abs(x_f));
+stem(f3,abs(x_f3));
+
+subplot(2,2,4);
+hold on;
+plot(f, abs(x_f));
 stem(f4,abs(x_f4))
 
 
